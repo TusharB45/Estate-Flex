@@ -1,0 +1,79 @@
+'use client';
+
+import qs from 'query-string';
+import { useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
+import { IconType } from "react-icons";
+import { motion } from 'framer-motion';
+
+interface CategoryBoxProps {
+  icon: IconType;
+  label: string;
+  selected?: boolean;
+}
+
+const CategoryBox: React.FC<CategoryBoxProps> = ({
+  icon: Icon,
+  label,
+  selected,
+}) => {
+  const router = useRouter();
+  const params = useSearchParams();
+
+  const handleClick = useCallback(() => {
+    let currentQuery = {};
+    
+    if (params) {
+      currentQuery = qs.parse(params.toString())
+    }
+
+    const updatedQuery: any = {
+      ...currentQuery,
+      category: label
+    }
+
+    if (params?.get('category') === label) {
+      delete updatedQuery.category;
+    }
+
+    const url = qs.stringifyUrl({
+      url: '/',
+      query: updatedQuery
+    }, { skipNull: true });
+
+    router.push(url);
+  }, [label, router, params]);
+
+  return ( 
+    <motion.div
+      whileTap={{ scale: 0.95 }}
+      onClick={handleClick}
+      className={`
+        flex 
+        flex-col 
+        items-center 
+        justify-center 
+        gap-2
+        p-3
+        border-b-2
+        hover:text-neutral-800
+        transition
+        cursor-pointer
+        ${selected ? 'border-b-neutral-800' : 'border-transparent'}
+        ${selected ? 'text-neutral-800' : 'text-neutral-500'}
+      `}
+    >
+      <motion.div
+        animate={{ rotate: selected ? 360 : 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Icon size={26} />
+      </motion.div>
+      <div className="font-medium text-sm">
+        {label}
+      </div>
+    </motion.div>
+   );
+}
+ 
+export default CategoryBox;
