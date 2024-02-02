@@ -31,7 +31,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${font.className} bg-cover bg-center bg-fixed`} style={{ backgroundImage: 'url("/images/bb.gif")', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: '10%' }}>
+      <body className={`${font.className} bg-cover bg-center bg-fixed`} style={{ backgroundImage: 'url("/images/bb.gif")', backgroundAttachment: 'fixed', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: '20%' }}>
         <ClientOnly >
           <BackgroundParticles />
           <ToasterProvider />
