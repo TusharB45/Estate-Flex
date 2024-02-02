@@ -1,5 +1,7 @@
 // logo.tsx
 'use client';
+// logo.tsx
+'use client';
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -12,7 +14,6 @@ const Logo = () => {
       className="logo-container"
       onClick={() => router.push('/')}
       aria-label="Go to homepage"
-
     >
       <div className="logo-content">
         <motion.div
@@ -63,13 +64,27 @@ const Logo = () => {
           font-size: 1.4rem;
           font-weight: bold;
           margin-left: 10px;
-          color: z;
+          color: black; /* Default text color */
         }
       `}</style>
       {/* Tailwind CSS Styles */}
       <style jsx global>{`
         .logo-img-container {
           @apply border-rounded-full;
+        }
+      `}</style>
+
+      {/* Mobile Styles */}
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .logo-container {
+            
+            background-color: #63b3ed; /* Change background color for mobile */
+          }
+
+          .logo-text {
+            color: #FFFFFF; /* Change text color for mobile */
+          }
         }
       `}</style>
     </motion.button>

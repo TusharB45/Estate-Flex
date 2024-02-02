@@ -1,5 +1,6 @@
 // components/DeveloperBox.tsx
 'use client'; 
+
 import Image from 'next/image';
 import Button from './Button'; // Replace with the actual path
 
@@ -80,5 +81,4 @@ const DeveloperBox: React.FC<DeveloperBoxProps> = ({
   </div>
 );
 
-export default DeveloperBox;
-
+export default DeveloperBox

@@ -1,4 +1,5 @@
 'use client';
+'use client';
 
 import { useSearchParams } from 'next/navigation';
 import { useMemo } from 'react';
@@ -13,10 +14,10 @@ const Search = () => {
   const params = useSearchParams();
   const { getByValue } = useCountries();
 
-  const  locationValue = params?.get('locationValue'); 
-  const  startDate = params?.get('startDate');
-  const  endDate = params?.get('endDate');
-  const  guestCount = params?.get('guestCount');
+  const locationValue = params?.get('locationValue');
+  const startDate = params?.get('startDate');
+  const endDate = params?.get('endDate');
+  const guestCount = params?.get('guestCount');
 
   const locationLabel = useMemo(() => {
     if (locationValue) {
@@ -39,7 +40,7 @@ const Search = () => {
       return `${diff} Days`;
     }
 
-    return 'Any Week'
+    return 'Any Week';
   }, [startDate, endDate]);
 
   const guestLabel = useMemo(() => {
@@ -50,7 +51,7 @@ const Search = () => {
     return 'Add Guests';
   }, [guestCount]);
 
-  return ( 
+  return (
     <div
       onClick={searchModal.onOpen}
       className="
@@ -65,7 +66,7 @@ const Search = () => {
         cursor-pointer
       "
     >
-      <div 
+      <div
         className="
           flex 
           flex-row 
@@ -73,22 +74,22 @@ const Search = () => {
           justify-between
         "
       >
-        <div 
+        <div
           className="
             text-sm 
             font-semibold 
-            px-6
+            px-2 md:px-6
           "
         >
           {locationLabel}
         </div>
-        <div 
+        <div
           className="
             hidden 
             sm:block 
             text-sm 
             font-semibold 
-            px-6 
+            px-2 md:px-6 
             border-x-[1px] 
             flex-1 
             text-center
@@ -96,20 +97,19 @@ const Search = () => {
         >
           {durationLabel}
         </div>
-        <div 
+        <div
           className="
             text-sm 
-            pl-6 
-            pr-2 
+            px-2 
             text-gray-600 
             flex 
             flex-row 
             items-center 
-            gap-3
+            gap-2 sm:gap-3
           "
         >
           <div className="hidden sm:block">{guestLabel}</div>
-          <div 
+          <div
             className="
               p-2 
               bg-blue-600
@@ -123,6 +123,6 @@ const Search = () => {
       </div>
     </div>
   );
-}
- 
+};
+
 export default Search;

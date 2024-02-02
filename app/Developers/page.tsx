@@ -30,7 +30,7 @@ const DevelopersPage = () => {
             email="tusharborse45@gmail.com.com"
             resumePath="/Resumes/Borse Tushar Mukesh.pdf"
             pronouns='he/him'
-            role=""
+            role="FrontEnd Developer"
           />
 
           {/* Developer Box 2 */}
@@ -48,7 +48,7 @@ const DevelopersPage = () => {
             email="akashyadava618@gmail.com"
             resumePath="/Resumes/Yadav Akash.pdf"
             pronouns='he/him'
-            role=""
+            role="BackEnd Developer"
           />
         </div>
       </Container>
