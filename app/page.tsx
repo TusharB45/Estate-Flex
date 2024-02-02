@@ -1,4 +1,4 @@
-
+export const dynamic = 'force-dynamic' 
 import Image from 'next/image'
 import { Nunito } from 'next/font/google' // Changed font to Nunito
 
@@ -19,8 +19,6 @@ interface HomeProps {
 };
 
 const Home = async ({ searchParams }: HomeProps) => {
-
-
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
 
