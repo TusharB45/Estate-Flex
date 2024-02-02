@@ -77,14 +77,18 @@ const Logo = () => {
       {/* Mobile Styles */}
       <style jsx>{`
         @media (max-width: 768px) {
+          
           .logo-container {
-            
             background-color: #63b3ed; /* Change background color for mobile */
           }
-
           .logo-text {
-            color: #FFFFFF; /* Change text color for mobile */
+            font-size: 0.8rem;
+            color: black; /* Default text color */
           }
+          .logo-img{
+
+          }
+
         }
       `}</style>
     </motion.button>

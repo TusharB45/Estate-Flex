@@ -13,7 +13,7 @@ import SearchModal from "./components/modals/SearchModal";
 import BackgroundParticles from "./components/Canvas/Stars"
 
 export const metadata = {
-  title: 'Estatflex',
+  title: 'Estateflex',
   description: 'A simple reservation website',
 }
 
