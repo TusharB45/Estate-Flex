@@ -38,7 +38,7 @@ const DevelopersPage = () => {
             name="Yadav Akash"
             imageUrl="/images/00c981920d0bd30cca24e62a6b760ba2.jpg"
             bio="Akash CodeMaster is a seasoned programmer skilled in both front-end and back-end development.
-            Meticulous and detail-oriented, she transforms abstract concepts into efficient algorithms.
+            Meticulous and detail-oriented, he transforms abstract concepts into efficient algorithms.
             A collaborative team player, Akash values communication and seamlessly integrates cutting-edge solutions.
             Beyond technical prowess, she excels in troubleshooting and debugging complex issues.
             Committed to staying updated, Akash is a problem solver with a passion for optimizing code and improving software performance."
