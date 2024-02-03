@@ -46,7 +46,7 @@ const DevelopersPage = () => {
             linkedin="https://www.linkedin.com/in/yadav-akash-a395a9291/"
             instagram="https://www.instagram.com/y_akash7/"
             email="akashyadava618@gmail.com"
-            resumePath="/Resumes/Yadav Akash.pdf"
+            resumePath="/Resumes/YAkash Resume.pdf"
             pronouns='he/him'
             role="BackEnd Developer"
           />
