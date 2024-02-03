@@ -1,5 +1,5 @@
 'use client';
-'use client';
+// Search.tsx
 
 import { useSearchParams } from 'next/navigation';
 import { useMemo } from 'react';
@@ -8,6 +8,10 @@ import { differenceInDays } from 'date-fns';
 
 import useSearchModal from '@/app/hooks/useSearchModal';
 import useCountries from '@/app/hooks/useCountries';
+
+// Search.tsx
+
+// ...
 
 const Search = () => {
   const searchModal = useSearchModal();
@@ -81,7 +85,7 @@ const Search = () => {
             px-2 md:px-6
           "
         >
-          {locationLabel}
+          <span className="hidden md:inline">{locationLabel}</span>
         </div>
         <div
           className="

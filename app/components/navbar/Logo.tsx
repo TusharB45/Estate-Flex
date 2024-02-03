@@ -10,7 +10,7 @@ const Logo = () => {
   const router = useRouter();
 
   return (
-    <motion.button
+    <motion.button  
       className="logo-container"
       onClick={() => router.push('/')}
       aria-label="Go to homepage"
@@ -76,16 +76,17 @@ const Logo = () => {
 
       {/* Mobile Styles */}
       <style jsx>{`
-        @media (max-width: 768px) {
-          
-          .logo-container {
-            background-color: black; /* Change background color for mobile */
-          }
-          .logo-text {
-            font-size: 0.8rem;
-            color: black; /* Default text color */
-          }
-      `}</style>
+          @media (max-width: 768px) {
+            .logo-container {
+              background-color: transparent; /* Change background color for mobile */
+              padding: 5px; /* Adjust padding for mobile */
+            }
+            .logo-text {
+                font-size: 0; /* Keep font size the same as on PC */
+                color: transparent; /* Default text color */
+              }
+            }
+`}</style>
     </motion.button>
   );
 };
