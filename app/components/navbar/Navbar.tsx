@@ -18,7 +18,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
   return (
     <motion.div
-      className="fixed w-full z-10 shadow-sm transparent"
+      className="fixed w-full z-10 shadow-sm transparent bg-white"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
