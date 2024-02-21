@@ -9,8 +9,8 @@ const Particles = () => {
   const particlesCount = 500;
   const particlesGeometry = new THREE.BufferGeometry();
   const particlesMaterial = new THREE.PointsMaterial({
-    size: 0.01,
-    color: new THREE.Color("#0a30f2"),
+    size: 0.02,
+    color: new THREE.Color("#000000"),
     transparent: true,
     blending: THREE.AdditiveBlending,
   });
