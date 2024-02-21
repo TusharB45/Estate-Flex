@@ -90,6 +90,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
             cursor-pointer 
             hover:shadow-md 
             transition
+            bg-white
           "
         >
           <motion.div
