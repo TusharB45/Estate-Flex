@@ -63,6 +63,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
            border-blue-600
             text-blue-600
             hover:shadow-md
+          bg-white
           "
         >
         <motion.div

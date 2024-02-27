@@ -10,7 +10,7 @@ import RentModal from "./components/modals/RentModal";
 import Navbar from "./components/navbar/Navbar";
 import ToasterProvider from "./providers/ToasterProvider";
 import SearchModal from "./components/modals/SearchModal";
-import BackgroundParticles from "./components/Canvas/Stars"
+
 
 export const metadata = {
   title: 'Estateflex',
@@ -33,7 +33,6 @@ export default async function RootLayout({
     <html lang="en">
       <body className={`${font.className} bg-cover bg-center bg-fixed bg-slate-100`}>
         <ClientOnly >
-          <BackgroundParticles />
           <ToasterProvider />
           <SearchModal />
           <LoginModal />

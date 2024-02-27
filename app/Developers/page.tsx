@@ -19,11 +19,7 @@ const DevelopersPage = () => {
           <DeveloperBox
             name="Borse Tushar"
             imageUrl="/images/1625402791406.png"
-            bio="Tushar ScriptWeaver is a dynamic programmer specializing in scripting languages and automation tools.
-            Known for creative problem-solving, he streamlines workflows and enhances efficiency through code.
-            Proficient in Python, Ruby, and Bash, Tushar simplifies complex processes, saving time and resources.
-            An avid learner, he explores new scripting languages and stays updated on automation technologies.
-            Strongly advocates for clean, readable code; Tushar collaborates well in interdisciplinary teams, delivering comprehensive solutions."
+            bio="Tushar ScriptWeaver excels in Python, Ruby, Bash, streamlining workflows and advocating for clean, readable code in collaborative teams."
             github="https://github.com"
             linkedin="https://www.linkedin.com"
             instagram="https://www.instagram.com"
@@ -37,11 +33,7 @@ const DevelopersPage = () => {
           <DeveloperBox
             name="Yadav Akash"
             imageUrl="/images/00c981920d0bd30cca24e62a6b760ba2.jpg"
-            bio="Akash CodeMaster is a seasoned programmer skilled in both front-end and back-end development.
-            Meticulous and detail-oriented, he transforms abstract concepts into efficient algorithms.
-            A collaborative team player, Akash values communication and seamlessly integrates cutting-edge solutions.
-            Beyond technical prowess, she excels in troubleshooting and debugging complex issues.
-            Committed to staying updated, Akash is a problem solver with a passion for optimizing code and improving software performance."
+            bio="Akash CodeMaster excels in front-end and back-end development, values communication, and optimizes code for improved software performance."
             github="https://github.com/AkashY45"
             linkedin="https://www.linkedin.com/in/yadav-akash-a395a9291/"
             instagram="https://www.instagram.com/y_akash7/"

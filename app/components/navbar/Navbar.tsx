@@ -26,13 +26,11 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
       <Container>
         <div className="py-4 border-b-[1px]">
           <div className="flex flex-row items-center justify-between">
-            <motion.div
+            <div
               className="flex items-center gap-4 cursor-pointer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
             >
               <Logo />
-            </motion.div>
+            </div>
             <Search />
             
             
