@@ -19,7 +19,7 @@ const DevelopersPage = () => {
           <DeveloperBox
             name="Borse Tushar"
             imageUrl="/images/1625402791406.png"
-            bio="Tushar ScriptWeaver excels in Python, Ruby, Bash, streamlining workflows and advocating for clean, readable code in collaborative teams."
+            bio=""
             github="https://github.com"
             linkedin="https://www.linkedin.com"
             instagram="https://www.instagram.com"
@@ -33,7 +33,7 @@ const DevelopersPage = () => {
           <DeveloperBox
             name="Yadav Akash"
             imageUrl="/images/00c981920d0bd30cca24e62a6b760ba2.jpg"
-            bio="Akash CodeMaster excels in front-end and back-end development, values communication, and optimizes code for improved software performance."
+            bio=""
             github="https://github.com/AkashY45"
             linkedin="https://www.linkedin.com/in/yadav-akash-a395a9291/"
             instagram="https://www.instagram.com/y_akash7/"
@@ -41,6 +41,7 @@ const DevelopersPage = () => {
             resumePath="/Resumes/YAkash Resume.pdf"
             pronouns='he/him'
             role="BackEnd Developer"
+  
           />
         </div>
       </Container>

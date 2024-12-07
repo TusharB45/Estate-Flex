@@ -1,3 +1,4 @@
+'use client';
 import { Range } from "react-date-range";
 import Heading from "../Heading";
 import Button from "../Button";

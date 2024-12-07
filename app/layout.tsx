@@ -4,16 +4,12 @@ import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
 import './globals.css'
 import getCurrentUser from './actions/getCurrentUser';
-
 import RentModal from "./components/modals/RentModal";
-
 import Navbar from "./components/navbar/Navbar";
 import ToasterProvider from "./providers/ToasterProvider";
 import SearchModal from "./components/modals/SearchModal";
-
-
 export const metadata = {
-  title: 'Estateflex',
+  title: 'EstateFlex',
   description: 'A simple reservation website',
 }
 
@@ -32,18 +28,19 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} bg-cover bg-center bg-fixed bg-slate-100`}>
-        <ClientOnly >
+        <ClientOnly >       
           <ToasterProvider />
           <SearchModal />
           <LoginModal />
           <RegisterModal />
           <RentModal />
-          <Navbar currentUser={currentUser} />
+          <Navbar currentUser={currentUser} />          
         </ClientOnly>
         <div className="pb-20 pt-28">
           {children}
         </div>
       </body>
+
     </html>
-  )
+  );
 }

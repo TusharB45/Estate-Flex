@@ -1,5 +1,4 @@
-// logo.tsx
-'use client';
+
 // logo.tsx
 'use client';
 import Image from "next/image";
@@ -37,7 +36,7 @@ const Logo = () => {
           />
         </motion.div>
 
-        <span className="logo-text">Estate Flex</span>
+        <span className="logo-text">EstateFlex</span>
       </div>
       <style jsx>{`
         .logo-container {

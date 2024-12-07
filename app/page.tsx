@@ -1,8 +1,6 @@
 export const dynamic = 'force-dynamic' 
 import Image from 'next/image'
 import { Nunito } from 'next/font/google' // Changed font to Nunito
-
-
 const nunito = Nunito({ subsets: ['latin'] })
 import Container from "@/app/components/Container";
 import ListingCard from "@/app/components/listings/ListingCard";
@@ -12,7 +10,7 @@ import getListings, {
   IListingsParams
 } from "@/app/actions/getListings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
-import ClientOnly from "../app/components/ClientOnly";
+import ClientOnly from "./components/ClientOnly";
 
 interface HomeProps {
   searchParams: IListingsParams

@@ -20,7 +20,7 @@ const Avatar: React.FC<AvatarProps> = ({ src }) => {
         alt="Avatar"
         src={src || '/images/placeholder.jpg'}
       />
-      {/* Add a border or other decorative elements if needed */}
+      
       <div className="absolute inset-0 rounded-full border-2 border-white"></div>
     </motion.div>
   );

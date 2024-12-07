@@ -40,7 +40,7 @@ const SearchModal = () => {
     key: 'selection'
   });
 
-  const Map = useMemo(() => dynamic(() => import('../Map'), { 
+  const Map = useMemo(() => dynamic(() => import('../../Developers/Map'), { 
     ssr: false 
   }), [location]);
 

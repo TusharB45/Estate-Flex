@@ -1,5 +1,5 @@
 // UserMenu.tsx
-"use client"
+"use client";
 import { useCallback, useState } from "react";
 import { motion } from "framer-motion";
 import { AiOutlineSetting } from "react-icons/ai";
