@@ -19,7 +19,11 @@ const DevelopersPage = () => {
           <DeveloperBox
             name="Borse Tushar"
             imageUrl="/images/1625402791406.png"
+<<<<<<< HEAD
             bio=""
+=======
+            bio="Tushar ScriptWeaver excels in Python, data science, streamlining workflows and advocating for clean, readable code in collaborative teams."
+>>>>>>> 8a27f5cff31833368e4465e8ebbd8d766970e3bd
             github="https://github.com"
             linkedin="https://www.linkedin.com"
             instagram="https://www.instagram.com"
