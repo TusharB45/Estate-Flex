@@ -1,5 +1,3 @@
-// developers.tsx
-// developers.tsx
 'use client'; 
 // developers.tsx
 import ClientOnly from '@/app/components/ClientOnly';
@@ -44,9 +42,7 @@ const DevelopersPage = () => {
   
           />
         </div>
-      </Container>
-      
-    
+    </Container>
     </ClientOnly>
     
   );
